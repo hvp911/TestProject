@@ -26,7 +26,7 @@ public class ValidateBinarySearchTree {
 			isValid = root.val > root.left.val;
 		} else if (root.right != null) {
 			isValid = root.val > root.right.val;
-		}
+		} 
 		if (isValid && root.left != null) {
 			isValid &= validateBST(root.left, root.val);
 		}
